@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initital-scale=1.0">
+    <title>Eco garden</title>
+    <!-- <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/bootstrap-5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome 6.3.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        
+    
+</head>
+<body>
+    <!-- Block Element Modifier -->
+    <div class="main">
+        <header class="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-1">
+                        <div class="logo">
+                            <a href="/" class="header__logo-home">
+                                <img width="120" src="./assets/images/logo.png" alt="Logo EcoGarden">
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-11">
+                        <nav class="header__navbar">
+                            <ul class="header__navbar-list header__navbar-list-left">
+                                <li class="header__navbar-item">
+                                    <a href="" class="header__navbar-item-link header__navbar-item-link--separate">Trang chủ</a>
+                                </li>
+                                <li class="header__navbar-item">
+                                    <a href="" class="header__navbar-item-link header__navbar-item-link--separate">Các dịch vụ - vé vào cổng</a>
+                                </li>
+                                <li class="header__navbar-item">
+                                    <a href="" class="header__navbar-item-link header__navbar-item-link--separate">Về chúng tôi</a>
+                                </li>
+                                <li class="header__navbar-item">
+                                    <a href="" class="header__navbar-item-link">Liên hệ</a>
+                                </li>
+                            </ul>
+                            <ul class="header__navbar-list">
+                                <li class="header__navbar-item">
+                                    <a href="" class="header__navbar-item-link">
+                                        <i class="header__navbar-icon fa-solid fa-bag-shopping"></i>Giỏ hàng</a>
+                                </li>
+                                <li class="header__navbar-item">
+                                    <a href="" class="header__navbar-item-link">
+                                        <i class="header__navbar-icon fa-solid fa-circle-user"></i>Đăng nhập</a> 
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header-with-search">
+                            <div class="header__search">
+                                <div class="header__search-input-wrap">
+                                    <input type="text" class="header__search-input" placeholder="Tìm kiếm dịch vụ">
+                                    <!-- Search history -->
+                                    <div class="header__search-history">
+                                        <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                        <ul class="header__search-history-list">
+                                            <li class="header__search-history-item">
+                                                <a href="" class="">Giá vé vào cổng</a>
+                                            </li>
+                                            <li class="header__search-history-item">
+                                                <a href="" class="">Trò chơi bơi xuồng</a>
+                                            </li>
+                                            <li class="header__search-history-item">
+                                                <a href="" class="">Trò chơi xe đạp nước</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <button class="header__search-btn">
+                                    <i class="header__search-btn-icon fas fa-search "></i>
+                                </button>
+                            </div>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid container-fluid__main">
+            <div class="row row__top">
+                <div class="col-sm-8 app__container-left"> 
+                    <section class="slider">
+                        <div class="slider__container">
+                            <div class="slider__item">
+                                <img src="./assets/images/eco_garden.png" id="slider_pic-first"  alt="Eco-Garden">
+                            </div>
+                            <div class="slider__container-btn">
+                                <div class="control_prev">
+                                    <i class="fas fa-chevron-left" onclick="prev()"></i>
+                                </div>
+                                <div class="control_next">
+                                    <i class="fas fa-chevron-right" onclick="next()"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </section> 
+                </div>
+                <div class="col-sm-4 app__container-right">
+                    <div class="row container__row">
+                        <li><a href=""><img src="./assets/images/dua_thuyen.jpg" alt="dua_thuyen "></a></li>
+                        <li><a href=""><img src="./assets/images/du_day.jpg" alt="du_day "></a></li>
+                        <li><a href=""><img src="./assets/images/xe_dap.jpg" alt="xe_dap "></a></li>
+                        <li><a href=""><img src="./assets/images/cay_cau.jpg" alt="cay_cau "></a></li>
+                    </div>
+                </div>   
+            </div>
+            <div class="row row__mid">
+                <h2 class="srv-title text-act"> CÁC HOẠT ĐỘNG NỔI BẬT</h2>
+                <div class="col-sm-3 row__mid__act">
+                    <div class="act_item">
+                        <a href=""><img src="./assets/images/dua_thuyen.jpg" alt="dua_thuyen"></a>
+                        <h4 class="act_item-name">Đua thuyền</h4>
+                        <span class="act_item-price">20.000đ</span>
+                    </div>
+                </div>
+                <div class="col-sm-3 row__mid__act">
+                    <div class="act_item">
+                        <a href=""><img src="./assets/images/xe_dap.jpg" alt="dua_thuyen"></a>
+                        <h4 class="act_item-name">Xe đạp nước</h4>
+                        <span class="act_item-price">15.000đ</span>
+                    </div>
+                </div>
+                <div class="col-sm-3 row__mid__act">
+                    <div class="act_item">
+                        <a href=""><img src="./assets/images/main-eco-1.webp" alt="dua_thuyen"></a>
+                        <h4 class="act_item-name">Đu dây giăng và cầu khỉ không tay vịn</h4>
+                        <span class="act_item-price">30.000đ</span>
+                    </div>
+                </div>
+                <div class="col-sm-3 row__mid__act">
+                    <div class="act_item">
+                        <a href=""><img src="./assets/images/main-eco-3.webp" alt="dua_thuyen"></a>
+                        <h4 class="act_item-name">Trò chơi tát mương bắt cá</h4>
+                        <span class="act_item-price">25.000đ</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row row__bot">
+                <div class="col-sm-12 main_title">
+                    <h1 class="main_title-header">Khu du lich Eco Garden</h1>
+                    <p class="main_title-content">khu du lịch Eco Garden là điểm tham quan, vui chơi, giải trí hút khách nhất tại Bến Tre hiện nay. Được xây dựng theo phong cách đậm chất miền Tây, Eco Garden nổi tiếng với cảnh sắc thiên nhiên sông nước tươi đẹp, các món ăn đặc sản và nhiều hoạt động trải nghiệm thú vị. Ngoài ra, nơi đây còn là thiên đường cho các chuyến teambuilding, du lịch và nghỉ dưỡng cuối tuần.</p>
+                    <div class="main_title-div-img">
+                        <img src="./assets/images/main-eco-1.webp" alt="Man-eco-1" class="main_title-img">
+                    </div>
+                    <h2 class="main_title-header-2">1. Đôi nét giới thiệu về khu du lịch Eco Garden</h2>
+                    <p class="main_title-content">Khu du lịch Eco Garden là địa điểm vui chơi, giải trí hấp dẫn, thuộc xã Phú Nhuận, thành phố Bến Tre. Nằm tại Tỉnh lộ 887, ấp 2, khu du lịch này chỉ cách trung tâm thành phố chừng 5 km. Vài năm trước, nơi đây chỉ là những thửa ruộng hoang sơ, được tỉnh khai phá và đầu tư trở thành điểm du lịch văn hoá, thể thao và sông nước miệt vườn.</p>
+                    <div class="main_title-div-img">
+                        <img src="./assets/images/main-eco-2.webp" alt="Man-eco-1" class="main_title-img">
+                    </div>
+                    <p class="main_title-content">Đến với Eco Garden, du khách sẽ được đắm mình trong một khung cảnh làng quê Nam Bộ xanh mát, thanh bình, vườn trái cây trĩu quả. Bên cạnh đó, đây còn nơi lý tưởng để tổ chức các hoạt động teambuilding, cắm trại và dã ngoại cuối tuần.</p>
+                    <h2 class="main_title-header-2">2. Khu du lịch Eco Garden giá vé mới nhất</h2>
+                    <p class="main_title-content">Khu du lịch Eco Garden sẽ miễn phí vé cho khách đến tham quan vào các ngày thường. Các dịp lễ tết như Tết Nguyên Đán, Giỗ Tổ Hùng Vương, 30/4 và 1/5, du khách phải trả 30.000 VND/ vé vào cổng. Bảng giá các dịch vụ trong khu du lịch được quy định như sau:</p>
+                    <ul class="main_title-list">
+                        <li class="main_title-content">Thuê đồ bà ba: 30.000 VND/ bộ (đặt cọc 120.000 VND/ bộ).</li>
+                        <li class="main_title-content">Trò chơi đu dây giăng và cầu khỉ không tay vịn: miễn phí vé.</li>
+                        <li class="main_title-content">Trò chơi xe đạp nước: 10.000 VND/ vé/ 3 lượt chạy.</li>
+                        <li class="main_title-content">Trò chơi bơi xuồng: 50.000 VND/ chiếc/ 4 người/ 1,5 giờ.</li>
+                        <li class="main_title-content">Trò chơi tát mương bắt cá: 800.000 VND/ mương/ 10 con cá lóc.</li>
+                        <li class="main_title-content">Trò chơi bịt mắt bắt vịt: 300.000 VND/ xô vịt 3 con.</li>
+                        <li class="main_title-content">Đào khoai (phí dịch vụ + nướng khoai): 300.000 VND/ 5 kg.</li>
+                        <li class="main_title-content">Phí cắm trại và đốt lửa trại (mỗi nhóm từ 30 khách): tùy chỉnh theo quy mô tổ chức.</li>
+                    </ul>
+                    <div class="main_title-div-img">
+                        <img src="./assets/images/main-eco-3.webp" alt="Man-eco-1" class="main_title-img">
+                    </div>
+                    <p class="main_title-content">Đặc biệt, khu du lịch Eco Garden Bến Tre còn có các gói combo với mức giá siêu tốt dành cho các đoàn đông người. Nếu đoàn có nhiều thành viên, bạn nên chọn các gói này để tiết kiệm chi phí.</p>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container-fluid container-fluid__footer">
+                <div class="row footer_row-top">
+                    <div class="col-sm-4 footer_top-left">
+                        <div class="footer_row-top-left">
+                            <img src="./assets/images/logo.png" alt="eco-logo">
+                            <h1 class="footer_row-h1">Eco Garden</h1>
+                            <p class="footer_row-content">Địa chỉ: Tỉnh lộ 887, ấp 2, xã Phú Nhuận, thành phố Bến Tre.</p>
+                            <p class="footer_row-content">Hotline: 092554875</p>
+                            <p class="footer_row-content">Email: Ecogarden@gmail.com</p>
+                            <h1 class="footer_row-h1">Theo dõi chúng tôi trên</h1>
+                            <li class="footer_row-top-left-fl">
+                                <a href="" class="footer_row-item">
+                                    <i class="footer_row-icon fab fa-facebook">
+                                        Facebook
+                                    </i>
+                                    
+                                </a>
+                                <a href="" class="footer_row-item">
+                                    <i class="footer_row-icon fab fa-instagram">
+                                        Instagram
+                                    </i>
+                                    
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="col-sm-8 footer_top-right">
+                        <div class="footer_row-top-right">
+                            <h1 class="footer_row-h1">Bản đồ</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row footer_row-bot">
+                    <h2 class="footer_row-bot-content">Khu du lịch Eco Garden, Bến Tre 2023 - All rights reserved</h2>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div class="modal">
+        <div class="modal__overlay">
+            <div class="modal__body">
+            <!-- Register  form -->
+                <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                                <span class="auth-form__switch-btn">Đăng nhập</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập họ và têm">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập email/số điện thoại">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập mã xác minh">
+                                <button class="btn auth-form__control-confirm">Gửi mã xác minh</button>
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng ký, bạn đã đồng ý với Eco Garden về 
+                                <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn btn--normal auth-form__control-back ">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+                    
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials--fb btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                            <span class="auth-form__socials-title">
+                                Kết nối với Facebook
+                            </span>
+
+                        </a>
+                        <a href="" class="auth-form__socials--gg btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-google"></i>
+                            <span class="auth-form__socials-title">
+                                Kết nối với Google 
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Login form -->
+                <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng nhập</h3>
+                                <span class="auth-form__switch-btn">Đăng ký</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Nhập email/số điện thoại">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <p class="auth-form__forget">
+                                <a href="" class="auth-form__text-link">Quên mật khẩu</a>
+                            </p>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn btn--normal auth-form__control-back ">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                        </div>
+                    </div>
+                    
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials--fb btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-facebook-square"></i>
+                            <span class="auth-form__socials-title">
+                                Đăng nhập với Facebook
+                            </span>
+
+                        </a>
+                        <a href="" class="auth-form__socials--gg btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fab fa-google"></i>
+                            <span class="auth-form__socials-title">
+                                Đăng nhập với Google 
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script> -->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
+                
