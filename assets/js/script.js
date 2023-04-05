@@ -1,24 +1,25 @@
-let counter = 1;
-var aray_pic=[
-    "assets/images/eco_garden.png",
-    "assets/images/eco_garden1.png",
-    "assets/images/eco_garden2.jpg",
-    "assets/images/eco_garden3.jpg",
-    "assets/images/eco_garden4.jpg"
-];
 var sliderImg= document.getElementById("slider_pic-first");
-// slider
+const imgPosition = document.querySelectorAll(".slider__item img")
+const imgContainer = document.querySelector('.slider__item')
+let imgNumber = imgPosition.length;
+let counter = 0;
+
+imgPosition.forEach(function(image,counter){
+    image.style.left = counter*100 + "%"
+})
+
 function prev(){
-    counter--;
-    if (counter <-0) 
-        counter=aray_pic.length-1;
-        sliderImg.src=aray_pic[counter];
+    if(counter>=1){
+        counter--;
+    imgContainer.style.left = "-" + counter*100 + "%"
+    }else{
+        counter=imgNumber-1;
+        imgContainer.style.left = "-" + counter*100 + "%"
+    }
 };
 function next(){
     counter++;
-    if (counter==aray_pic.length) 
-        counter=0;
-        sliderImg.src=aray_pic[counter];
+    if (counter>=imgNumber) {counter=0}
+    imgContainer.style.left = "-" + counter*100 + "%"
 };
-
 setInterval("next()",3000);
