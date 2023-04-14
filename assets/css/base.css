@@ -51,34 +51,6 @@ li {
         transform: scale(var(--growth-to));
     }
 }
-
-/* Modal */
-.modal { 
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    animation: fedeIn linear 0.1s;
-
-}
-.modal__overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-.modal__body {
-    --growth-form: 0.7;
-    --growth-to: 1;
-    margin: 20px 500px;
-    position: relative;
-    z-index: 1;
-    animation: growth linear 0.1s;
-    border-radius: 5px;
-    background-color: var(--white-color);
-}
 /* Button style */
 .btn_cus{
     min-width: 140px;
@@ -91,7 +63,7 @@ li {
     outline: none;
     cursor: pointer;
     color: var(--text-color);
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     line-height: 1.6rem;

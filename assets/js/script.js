@@ -1,4 +1,4 @@
-var sliderImg= document.getElementById("slider_pic-first");
+// slider img home
 const imgPosition = document.querySelectorAll(".slider__item img")
 const imgContainer = document.querySelector('.slider__item')
 let imgNumber = imgPosition.length;
@@ -22,4 +22,12 @@ function next(){
     if (counter>=imgNumber) {counter=0}
     imgContainer.style.left = "-" + counter*100 + "%"
 };
-setInterval("next()",3000);
+setInterval("next()",4000);
+
+// click select catogory
+const selectCategoryItem = document.querySelectorAll(".category-item")
+selectCategoryItem.forEach(function(menu,index){
+    menu.addEventListener("click",function(){
+        menu.classList.toggle("category-item_active")
+    })
+})
